@@ -7,8 +7,8 @@ const Home = () => (
     <div className="body">
       Hello, I'm Max, a software engineer based in the San Francisco Bay Area.
       Before becoming an engineer I studied History of Art at U.C. Berkeley.
-      <br /> I'm obsessed with books, music, football and hockey. You can see what
-      books, music and movies I'm into
+      <br /> I'm obsessed with books, music, football and hockey. You can see
+      what books, music and movies I'm into
       <Link href="/library">
         <a className="body-link"> here</a>
       </Link>
@@ -25,7 +25,7 @@ const Home = () => (
           align-items: center;
           width: 445px;
           flex-direction: column;
-          margin: 130px 700px;
+          margin: 130px 500px;
           color: black;
           font-family: 'Roboto';
         }
@@ -35,7 +35,7 @@ const Home = () => (
           margin-top: 15%;
         }
         .body-link {
-          color: #FF6C00;
+          color: #ff6c00;
           text-decoration: none;
         }
 
@@ -46,6 +46,12 @@ const Home = () => (
         img {
           margin-top: 10%;
           width: 100%;
+        }
+        @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+          .container {
+            margin: 130px 30%;
+            font-size: 1.5em;
+          }
         }
       `}
     </style>

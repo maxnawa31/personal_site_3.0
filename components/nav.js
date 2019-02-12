@@ -15,11 +15,13 @@ const Nav = () => (
 
     <style jsx>
       {`
+      @import url('https://fonts.googleapis.com/css?family=Roboto');
         .navbar-container {
           display: flex;
           flex-direction: row;
           justify-content: space-evenly;
           width: 100%;
+          font-family: 'Roboto';
         }
         .home {
           font-size: 17px;

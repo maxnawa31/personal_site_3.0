@@ -58,6 +58,7 @@ class SongsForm extends Component {
               margin-top: 10px;
               outline: none;
               background-color: white;
+              padding-left: 10px;
             }
 
             input:-webkit-autofill,
