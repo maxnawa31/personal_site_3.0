@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Nav from '../components/nav';
 import SongsForm from '../components/SongsForm';
+import UniversalForm from '../components/UniversalForm'
 import SongsList from '../components/SongsList';
 class Songs extends Component {
   constructor(props) {
@@ -23,7 +24,7 @@ class Songs extends Component {
     return [
       <div className="container">
         <Nav />
-        <SongsForm fetchSongs={this.fetchSongs} />
+        <UniversalForm mode={'songs'} secondFetch={this.fetchSongs} />
 
         <style jsx>
           {`

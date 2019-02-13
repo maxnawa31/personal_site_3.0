@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Nav from '../components/nav';
-import BooksForm from '../components/BooksForm';
+// import BooksForm from '../components/BooksForm';
+import UniversalForm from '../components/UniversalForm';
 import BooksList from '../components/BooksList';
 class Books extends Component {
   constructor(props) {
@@ -27,7 +28,7 @@ class Books extends Component {
     return [
       <div className="container">
         <Nav />
-        <BooksForm fetchBooks={this.fetchBooks} handleLoading={this.handleLoading} />
+        <UniversalForm mode={'books'} secondFetch={this.fetchBooks} />
 
         <style jsx>
           {`
