@@ -15,10 +15,7 @@ class UniversalForm extends Component {
     this.setState({ [e.target.name]: e.target.value }, () => console.log(this.state));
   };
 
-  handleSubmit = e => {
-    e.preventDefault();
-    const { mode, secondFetch } = this.props;
-    const { author, artist, title, link } = this.state;
+  determineData = (mode) => {
     let data;
     if (mode === 'books') {
       data = { author, title, link };
@@ -27,6 +24,12 @@ class UniversalForm extends Component {
     } else {
       data = { title, link };
     }
+    return data;
+  }
+  handleSubmit = e => {
+    e.preventDefault();
+    const { mode, secondFetch } = this.props;
+    let data = this.determineData(mode);
     apiCall(mode, data)
       .then(res => res.json())
       .then(() => secondFetch())
