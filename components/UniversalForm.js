@@ -63,6 +63,8 @@ class UniversalForm extends Component {
     const { mode } = this.props;
     return (
       <form className="form-container" onSubmit={this.handleSubmit}>
+      <h3>Currently viewing {mode}</h3>
+      <h4>Feel free to add any recommendations below</h4>
         <input value={this.state.title} onChange={this.handleChange} name="title" placeholder="title" />
         <input value={this.state.link} onChange={this.handleChange} name="link" placeholder="link" />
         {mode === 'movies' ? null :
@@ -80,7 +82,7 @@ class UniversalForm extends Component {
               display: flex;
               flex-direction: column;
               width: 100%;
-              margin-top: 20%;
+              margin-top: 10%;
 
               align-items: center;
             }
