@@ -7,7 +7,7 @@ const Home = () => (
     <div className="body">
       Hello, I'm Max, a software engineer based in the San Francisco Bay Area.
       Before becoming an engineer I studied History of Art at U.C. Berkeley.
-      <br /> I'm obsessed with books, music, football and hockey. You can see
+      <br /> I enjoy books, music, football and hockey. You can see
       what books, music and movies I'm into
       <Link href="/library">
         <a className="body-link"> here</a>

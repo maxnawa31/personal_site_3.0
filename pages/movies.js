@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Nav from '../components/nav';
-import MoviesForm from '../components/MoviesForm';
+import Loader from '../components/Loader';
 import UniversalForm from '../components/UniversalForm';
 import MoviesList from '../components/MoviesList';
 class Movies extends Component {
